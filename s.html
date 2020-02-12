@@ -1,0 +1,56 @@
+ <script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.13.0/jquery.validate.min.js"></script>
+
+    <form name="registration_form" id="registration_form" action="save.php" method="post">
+   <div id="tabs">
+    <ul>
+    <li><a href="#tabs-1">Basic Details</a></li>
+    <li><a href="#tabs-2">Employee Details</a></li>
+    <li><a href="#tabs-3">Address</a></li>
+    </ul>
+   <div id="tabs-1">
+      <div class="field">   
+        <label>First Name</label>
+          <input type="text" name="first_name" id="first_name" />          
+        <label>Last Name</label>
+          <input type="text" name="last_name" id="last_name" />
+       </div>
+       <div class="field">  
+         <label>Age</label>
+           <input type="text" name="age" id="age"/>
+       </div>
+       <div class="field">   
+           <input value="Next" type="button" id="next-1" name="1"/> 
+       </div>
+   </div>
+   <div id="tabs-2">
+     <div class="field">   
+       <label>Company</label>
+         <input type="text" name="company" id="company">
+     </div>
+     <div class="field">   
+       <label>Designation</label>
+          <select name="designation" >
+            <option value="software developer">software developer</option>
+            <option value="software analyst">software analyst</option>
+            <option value="tester">tester</option>
+           </select>
+     </div>
+     <div class="field">   
+      <label>Annual income</label>
+        <input type="text" name="income" id="income"> in Rupees
+    </div>
+    <div class="field">   
+       <input value="Next" type="button" id="next-2" name="2" /> 
+    </div>
+  </div>
+  <div id="tabs-3">
+     <div class="field">   
+       <label>Address</label>
+         <input type="text" name="address" id="address" 
+     </div>
+    <div class="field">   
+       <input type="submit" name="submit" value="SUBMIT" id="reg_submit" />
+    </div>
+  </div>
+ </div>
+ </form>
